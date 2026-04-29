@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalis | Soluções e Tecnologia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; 
+        }
+        
+        .bg-kalis-deep { background-color: #020617; } 
+        .text-kalis-blue { color: #00A3FF; } 
+        .text-kalis-silver { color: #F8FAFC; } 
+        .bg-kalis-gradient {
+            background: linear-gradient(135deg, #0077FF 0%, #00A3FF 100%);
+        }
+
+        .logo-font { font-family: 'Orbitron', sans-serif; }
+        
+        /* AJUSTE DO TAMANHO DA LOGO COM A CORREÇÃO DO OBJECT-CONTAIN */
+        .logo-img {
+            height: 65px; 
+            width: auto;
+            object-fit: contain; /* Adicionado para não esticar no telemóvel */
+        }
+
+        .portfolio-card:hover img { transform: scale(1.05); }
+
+        .faq-item details summary::-webkit-details-marker { display: none; }
+        details[open] summary svg { transform: rotate(180deg); }
+    </style>
+</head>
+<body class="bg-kalis-deep text-kalis-silver antialiased">
+
+    <header class="fixed w-full bg-kalis-deep/90 backdrop-blur-md z-50 border-b border-slate-800">
+        <nav class="w-full px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo-kalis.png" alt="Kalis Logo" class="logo-img">
+            </div>
+       
+            <div class="flex items-center space-x-8">
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-kalis-blue transition">Início</a>
+                    <a href="#servicos" class="hover:text-kalis-blue transition">Serviços</a>
+                    <a href="#metodologia" class="hover:text-kalis-blue transition">Processo</a>
+                    <a href="#portfolio" class="hover:text-kalis-blue transition">Portfólio</a>
+                </div>
+                <a href="#contato" class="bg-kalis-gradient px-5 py-2 rounded-lg text-white font-bold hover:opacity-90 transition shadow-[0_0_15px_rgba(0,163,255,0.5)]">Fale Conosco</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="pt-48 pb-24 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-tight text-white">
+                Engenharia de Software de <br>
+                <span class="text-kalis-blue">ponta para todo o Brasil.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 mb-12 max-w-3xl mx-auto">
+                Da estratégia ao código. A Kalis entrega soluções tecnológicas robustas e escaláveis para empresas que buscam liderar o mercado nacional.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#contato" class="bg-kalis-gradient text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-blue-500/20 hover:scale-105 transition">Começar Projeto</a>
+                <a href="#servicos" class="border border-slate-700 px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition">Nossas Soluções</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-white uppercase tracking-tight">Especialidades Kalis</h2>
+                <div class="w-24 h-1 bg-kalis-blue mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-10 rounded-3xl bg-kalis-deep border border-slate-800 hover:border-kalis-blue transition-all group">
+                    <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-kalis-blue/20 transition">
+                        <svg class="w-8 h-8 text-kalis-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Sistemas Customizados</h3>
+                    <p class="text-slate-400 font-light">Softwares sob medida que automatizam processos e escalam sua operação em todo o território nacional.</p>
+                </div>
+                <div class="p-10 rounded-3xl bg-kalis-deep border border-slate-800 hover:border-kalis-blue transition-all group">
+                    <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-kalis-blue/20 transition">
+                        <svg class="w-8 h-8 text-kalis-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Experiências Mobile</h3>
+                    <p class="text-slate-400 font-light">Desenvolvimento de aplicativos iOS e Android focados em performance e na melhor experiência do usuário.</p>
+                </div>
+                <div class="p-10 rounded-3xl bg-kalis-deep border border-slate-800 hover:border-kalis-blue transition-all group">
+                    <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-kalis-blue/20 transition">
+                        <svg class="w-8 h-8 text-kalis-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Consultoria Tech</h3>
+                    <p class="text-slate-400 font-light">Apoiamos empresas brasileiras na modernização de seus ecossistemas digitais e infraestrutura cloud.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodologia" class="py-24 border-t border-slate-800/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-white uppercase tracking-tight">Metodologia Kalis</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Como transformamos sua visão em um product digital de alto impacto.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-800 -z-10"></div>
+                <div class="bg-kalis-deep p-6 rounded-2xl border border-slate-800 text-center relative hover:border-kalis-blue transition">
+                    <div class="text-4xl font-black text-kalis-blue/20 mb-4">01</div>
+                    <h4 class="text-xl font-bold text-white mb-2">Imersão</h4>
+                    <p class="text-sm text-slate-400">Entendemos seu negócio, seus desafios e objetivos reais.</p>
+                </div>
+                <div class="bg-kalis-deep p-6 rounded-2xl border border-slate-800 text-center relative hover:border-kalis-blue transition">
+                    <div class="text-4xl font-black text-kalis-blue/20 mb-4">02</div>
+                    <h4 class="text-xl font-bold text-white mb-2">Arquitetura</h4>
+                    <p class="text-sm text-slate-400">Planejamos cada linha de código e a experiência do usuário.</p>
+                </div>
+                <div class="bg-kalis-deep p-6 rounded-2xl border border-slate-800 text-center relative hover:border-kalis-blue transition">
+                    <div class="text-4xl font-black text-kalis-blue/20 mb-4">03</div>
+                    <h4 class="text-xl font-bold text-white mb-2">Desenvolvimento</h4>
+                    <p class="text-sm text-slate-400">Codificação ágil com tecnologia de última geração.</p>
+                </div>
+                <div class="bg-kalis-deep p-6 rounded-2xl border border-slate-800 text-center relative hover:border-kalis-blue transition">
+                    <div class="text-4xl font-black text-kalis-blue/20 mb-4">04</div>
+                    <h4 class="text-xl font-bold text-white mb-2">Escala</h4>
+                    <p class="text-sm text-slate-400">Lançamento e suporte contínuo para sua evolução.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-kalis-deep">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <h2 class="text-4xl font-bold mb-4 text-white uppercase tracking-tight">Projetos de Impacto</h2>
+                    <div class="w-24 h-1 bg-kalis-blue rounded-full"></div>
+                </div>
+                <p class="text-slate-400 max-w-md font-light">Uma amostra das soluções de alta complexidade que desenvolvemos para nossos parceiros.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-card group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGFzaGJvYXJkfGVufDB8fDB8fHww" alt="Projeto Web" class="w-full h-full object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-kalis-blue text-xs font-bold uppercase tracking-widest">Web Platform</span>
+                        <h4 class="text-xl font-bold mt-2 text-white">Fintech Dashboard</h4>
+                        <p class="text-slate-400 text-sm mt-2 font-light">Sistema de gestão financeira em tempo real com análise de dados complexos.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1738908503726-bb6d8ac849cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI0fHx8ZW58MHx8fHx8" alt="Projeto Mobile" class="w-full h-full object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-kalis-blue text-xs font-bold uppercase tracking-widest">Mobile App</span>
+                        <h4 class="text-xl font-bold mt-2 text-white">E-commerce Delivery</h4>
+                        <p class="text-slate-400 text-sm mt-2 font-light">Aplicativo de compras com rastreio inteligente e integração de pagamentos.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1725907643701-9ba38affe7bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fFN1cHBseSUyMEFJfGVufDB8fDB8fHww" alt="Projeto Dados" class="w-full h-full object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-kalis-blue text-xs font-bold uppercase tracking-widest">Data Systems</span>
+                        <h4 class="text-xl font-bold mt-2 text-white">Supply Chain AI</h4>
+                        <p class="text-slate-400 text-sm mt-2 font-light">Automação de cadeia de suprimentos utilizando inteligência preditiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-slate-900/30 border-t border-slate-800/50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <div class="space-y-12">
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">Vamos construir o <br><span class="text-kalis-blue">próximo nível?</span></h2>
+                        <p class="text-slate-400 text-lg mb-10 leading-relaxed font-light">
+                            Tem uma ideia ou um desafio tecnológico? A Kalis tem a engenharia necessária para transformar isso em realidade.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-kalis-blue/10 rounded-full flex items-center justify-center text-kalis-blue">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-500 uppercase font-bold tracking-wider">E-mail</p>
+                                    <p class="text-white font-medium hover:text-kalis-blue transition">contato@kalisolucoes.com.br</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center text-green-500">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.891-11.893 11.891-2.011 0-3.98-.51-5.728-1.473l-6.265 1.69zm6.331-3.805c1.53.914 3.041 1.403 4.488 1.403 5.464 0 9.911-4.444 9.911-9.911 0-2.652-1.032-5.147-2.905-7.021-1.873-1.874-4.368-2.907-7.006-2.907-5.463 0-9.911 4.444-9.911 9.911 0 1.911.533 3.767 1.558 5.381l-1.03 3.754 3.895-1.01zm10.174-6.604c-.273-.137-1.62-.8-1.869-.891-.248-.09-.43-.136-.61.137-.181.272-.699.89-.857 1.071-.158.181-.315.204-.588.068-.273-.137-1.154-.426-2.199-1.357-.812-.724-1.36-1.618-1.52-1.89-.16-.272-.017-.419.12-.556.123-.122.273-.318.409-.477.137-.159.182-.272.272-.454.09-.182.045-.341-.023-.477-.068-.137-.61-1.473-.837-2.019-.22-.533-.444-.459-.61-.468-.159-.008-.34-.011-.522-.011-.182 0-.477.068-.727.341-.25.272-.954.932-.954 2.27 0 1.339.976 2.634 1.112 2.816.136.182 1.921 2.934 4.654 4.116.65.281 1.157.448 1.552.573.654.208 1.25.178 1.721.108.525-.078 1.62-.662 1.847-1.301.227-.639.227-1.187.159-1.301-.068-.113-.249-.181-.522-.318z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-500 uppercase font-bold tracking-wider">WhatsApp</p>
+                                    <a href="https://wa.me/5547999999999" target="_blank" class="text-white font-medium hover:text-kalis-blue transition">Suporte Comercial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full bg-slate-950/50 p-8 rounded-2xl border border-slate-800 shadow-xl">
+                        <h3 class="text-sm font-bold text-kalis-blue uppercase tracking-widest mb-6 flex items-center gap-2">
+                            <span class="w-2 h-2 bg-kalis-blue rounded-full animate-pulse"></span> Perguntas Frequentes
+                        </h3>
+                        <div class="space-y-4 text-sm">
+                            <details class="group cursor-pointer border-b border-slate-800/50 pb-3">
+                                <summary class="flex justify-between items-center text-slate-300 hover:text-white transition font-semibold">Prazo de entrega? <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                                <p class="mt-3 text-slate-400 leading-relaxed font-light">MVPs de 4 a 8 semanas. Projetos maiores variam conforme a complexidade.</p>
+                            </details>
+                            <details class="group cursor-pointer border-b border-slate-800/50 pb-3">
+                                <summary class="flex justify-between items-center text-slate-300 hover:text-white transition font-semibold">É responsivo? <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                                <p class="mt-3 text-slate-400 leading-relaxed font-light">Com certeza. Todos os sistemas são Mobile-First e funcionam perfeitamente em qualquer tela.</p>
+                            </details>
+                            <details class="group cursor-pointer border-b border-slate-800/50 pb-3">
+                                <summary class="flex justify-between items-center text-slate-300 hover:text-white transition font-semibold">Suporte pós-venda? <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                                <p class="mt-3 text-slate-400 leading-relaxed font-light">Sim, oferecemos suporte técnico e planos de evolução contínua para sua solução.</p>
+                            </details>
+                            <details class="group cursor-pointer border-b border-slate-800/50 pb-3">
+                                <summary class="flex justify-between items-center text-slate-300 hover:text-white transition font-semibold">Quais tecnologias? <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                                <p class="mt-3 text-slate-400 leading-relaxed font-light">Stack moderna: React, Node.js, Python, AWS e containers Docker.</p>
+                            </details>
+                            <details class="group cursor-pointer">
+                                <summary class="flex justify-between items-center text-slate-300 hover:text-white transition font-semibold">Como orçar? <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                                <p class="mt-3 text-slate-400 leading-relaxed font-light">Basta preencher o formulário ao lado ou clicar no ícone do WhatsApp.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-kalis-deep p-8 md:p-12 rounded-3xl border border-slate-800 shadow-2xl h-fit">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-500 mb-2 uppercase">Nome</label>
+                                <input type="text" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-kalis-blue transition" placeholder="Seu nome">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-500 mb-2 uppercase">Empresa</label>
+                                <input type="text" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-kalis-blue transition" placeholder="Nome da empresa">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-500 mb-2 uppercase">E-mail</label>
+                            <input type="email" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-kalis-blue transition" placeholder="contato@exemplo.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-500 mb-2 uppercase">Projeto</label>
+                            <textarea rows="6" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-kalis-blue transition" placeholder="Fale um pouco sobre o que você precisa..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-kalis-gradient py-4 rounded-xl font-bold text-lg hover:opacity-90 transition shadow-[0_0_20px_rgba(0,119,255,0.2)]">Enviar Proposta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800/50">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center items-center mb-6">
+                <img src="logo-kalis.png" alt="Kalis Logo" class="logo-img">
+            </div>
+            <p class="text-slate-500 text-sm font-light uppercase tracking-widest">© 2026 Kalis Soluções e Tecnologia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
